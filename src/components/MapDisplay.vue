@@ -11,14 +11,6 @@ export default {
   mounted() { // lifecycle to load the map upon page load
     this.displayMap();
   },
- watch: { // watch props for any change in value and the calls map function
-    longitude() {
-      this.loadMap();
-    },
-    latitude() {
-      this.loadMap();
-    },
-  },
   methods: {
     displayMap(){
       mapboxgl.accessToken =  process.env.VUE_APP_MAP_TOKEN
