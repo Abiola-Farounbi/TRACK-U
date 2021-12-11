@@ -1,4 +1,4 @@
-# ip-tracker
+# TRACK-U
 
 ## Project setup
 ```
