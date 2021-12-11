@@ -52,7 +52,7 @@ export default {
     },
   
   getInfo(){
-      const endpoint = `http://ipwhois.app/json/${this.searchInput}`
+      const endpoint = `https://ipwhois.app/json/${this.searchInput}`
       axios.get(endpoint)
        .then((data) => data.data)
        .then((result) => {
