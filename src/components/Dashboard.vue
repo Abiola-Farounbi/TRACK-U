@@ -10,22 +10,22 @@
                 {{country}}
                 <img class='w-fit m-auto w-8' :src=countryFlag alt='Country Flag'/>
             </p>
-        </div>
+        </div> 
         <div>
             city
-            <p class='my-2 font-black text-xl sm:text-base'> {{city}}</p>
+            <p class='textStyle'> {{city}}</p>
         </div>
         <div>
             isp
-            <p class='my-2 font-black text-xl sm:text-base'> {{isp}}</p>
+            <p class='textStyle'> {{isp}}</p>
         </div>
         <div>
             currency
-            <p class='my-2 font-black text-xl sm:text-base'> {{currency}}</p>
+            <p class='textStyle'> {{currency}}</p>
         </div>
         <div>
             timezone
-            <p class='my-2 font-black text-xl sm:text-base'> {{timezone}}</p>
+            <p class='textStyle'> {{timezone}}</p>
         </div>
     </div>
 </template>

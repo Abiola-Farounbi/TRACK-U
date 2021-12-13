@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layout{
+    .textStyle{
+        @apply my-2 font-black text-xl sm:text-base
+    }
+}

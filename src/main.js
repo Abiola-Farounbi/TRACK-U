@@ -6,7 +6,4 @@ import '@fortawesome/fontawesome-free/js/all.js'
 
 
 
-
-
-
 createApp(App).mount('#app')

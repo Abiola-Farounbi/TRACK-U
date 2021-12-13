@@ -2,7 +2,7 @@
      <div id="map"></div>
 </template>
 
-<script>
+<script >
 import mapboxgl from "mapbox-gl";
 
 export default {
@@ -29,6 +29,44 @@ export default {
     marker.addTo(map);
   },
     }
+}
+
+import {onMounted} from 'vue'
+
+export default {
+name: "MapDisplay",
+props:{
+  longitude:{
+    type: Number,
+    required: true,
+    default:0
+  },
+  latitude:{
+    type: Number,
+    required: true,
+    default:0
+  },
+},
+
+setup(props){
+mapboxgl.accessToken =  process.env.VUE_APP_MAP_TOKEN
+
+const displayMap = ()=>{
+  const map = new mapboxgl.Map({
+      container: 'map', // container ID
+      style: "mapbox://styles/mapbox/streets-v11",// style URL
+      center: [this.longitude, this.latitude], // starting position [lng, lat]
+      zoom: 5 // starting zoom    
+      });
+           map.addControl(new mapboxgl.NavigationControl());
+
+Watch()
+}
+
+onMounted(displayMap())
+
+}
+
 }
 </script>
 
