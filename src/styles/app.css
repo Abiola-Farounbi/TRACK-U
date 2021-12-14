@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .textStyle{
+        @apply my-2 font-black text-xl sm:text-base;
+    }
+
+    .boardStyle{
+        @apply  rounded-xl text-white text-center text-base p-2 uppercase sm:my-4 text-sm;
+    }
+} 
