@@ -34,6 +34,7 @@
 <script>
 export default {
   name: 'Dashboard',
+  // Passing the values as props.
   props: { 
       ipAddress:{
           type:String,

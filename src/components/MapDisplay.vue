@@ -1,4 +1,5 @@
 <template>
+<!-- The container to display the map -->
      <div id="map" class='w-full relative h-96 sm:h-60'></div>
 </template>
 

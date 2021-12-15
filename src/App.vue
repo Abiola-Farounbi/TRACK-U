@@ -7,6 +7,7 @@
         </h1>
         <p class='text-center my-4 text-white font-black text-xl sm:text-base'> Highly Optimized IP Address Tracker </p>
       </header>
+      <!-- The separate components -->
       <search-bar @trackIp="trackIpCall"/>
       <dashboard  :ipAddress="ipAddress" :isp="isp" :country="country" :countryFlag="countryFlag" :city="city" :currency="currency" :timezone="timezone" />
    </div>
@@ -46,17 +47,19 @@ export default {
     this.getInfo();
   },
   methods:{
+    // Function to get the value searched for
      trackIpCall(payload) {
       this.searchInput = payload;
       this.getInfo();
     },
   
   getInfo(){
+    // The Api request
       const endpoint = `https://ipwhois.app/json/${this.searchInput}`
       axios.get(endpoint)
        .then((data) => data.data)
        .then((result) => {
-        
+        // Storing the values gotten
             this.ipAddress = result.ip
             this.isp = result.isp
             this.longitude = result.longitude
