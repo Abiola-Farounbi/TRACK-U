@@ -5,7 +5,7 @@
             <p class='textStyle'> {{ipAddress}} </p>
         </div>
         <div class='boardStyle'>
-            County
+            Country
             <p class='textStyle'> 
                 {{country}}
                 <img class='w-fit m-auto w-8' :src=countryFlag alt='Country Flag'/>
