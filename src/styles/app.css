@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-<<<<<<< HEAD
 @tailwind utilities;
 
 @layer components {
@@ -13,6 +12,4 @@
         @apply  rounded-xl text-white text-center text-base p-2 uppercase sm:my-4 text-sm;
     }
 } 
-=======
-@tailwind utilities;
->>>>>>> 114ea8e8cdec2bc8ceb7a0da8a6b57d0d3d1ab68
+

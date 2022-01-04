@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import mapboxgl from "mapbox-gl";
+
 
 export default {
   name: 'MapDisplay',
@@ -21,19 +21,22 @@ export default {
     },
    },
   mounted() { // lifecycle method to load the map 
-    this.displayMap();
+    this.displayMap(); 
   },
-   // watch props for any change in value and the calls map function
+
+  //  watch props for any change in value and the calls map function
   watch: {
     longitude() {
       this.displayMap();
     },
+  
     latitude() {
       this.displayMap();
     },
   },
   methods: {
     displayMap(){
+      let mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
       mapboxgl.accessToken =  process.env.VUE_APP_MAP_TOKEN
       const map = new mapboxgl.Map({
       container: 'map', // container ID
