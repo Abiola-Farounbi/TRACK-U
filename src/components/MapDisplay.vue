@@ -4,8 +4,6 @@
 </template>
 
 <script>
-import mapboxgl from "mapbox-gl";
-
 export default {
   name: 'MapDisplay',
    props:{
@@ -34,6 +32,7 @@ export default {
   },
   methods: {
     displayMap(){
+      let mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
       mapboxgl.accessToken =  process.env.VUE_APP_MAP_TOKEN
       const map = new mapboxgl.Map({
       container: 'map', // container ID
