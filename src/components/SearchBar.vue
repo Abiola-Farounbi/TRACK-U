@@ -4,9 +4,9 @@
         class="search-input rounded-l-2xl w-3/4 p-4 border-0 sm:p-2"
         type="text"
         placeholder="Search using any IP address"
-        v-model="searchInput" @keyup.enter="searchIp"
+        v-model="searchInput" @keyup.enter="takeIP"
       />
-      <button class="p-4 rounded-r-2xl bg-black sm:p-2" type="submit" @click.prevent="searchIp"> <i class="fas fa-search text-white text-xl"></i></button>
+      <button class="p-4 rounded-r-2xl bg-black sm:p-2" type="submit" @click.prevent="takeIP"> <i class="fas fa-search text-white text-xl"></i></button>
     </form>
 </template>
 
@@ -23,7 +23,7 @@ export default {
   },
   methods: {
     // search function
-    searchIp() {
+    takeIP() {
       this.$emit("trackIp", this.searchInput);
     },
   },
