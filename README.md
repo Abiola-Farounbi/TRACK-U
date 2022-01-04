@@ -1,24 +1,9 @@
 # TRACK-U
 
-## Project setup
-```
-npm install
-```
+### Highly Optimized IP Address Tracker
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+# Demo
 
-### Compiles and minifies for production
-```
-npm run build
-```
+![Demo Image](https://res.cloudinary.com/idemo/image/upload/c_fill,g_faces,h_500/iqo2pbtrjy7uo8ejydj0.jpg)
 
-### Lints and fixes files
-```
-npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
