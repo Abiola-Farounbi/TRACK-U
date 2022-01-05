@@ -1,9 +1,12 @@
 <template>
     <div class=" dashboard container mx-auto px-4 grid grid-cols-3 gap-x-16 gap-y-4 sm:block">
+      <!-- div to show the IP address -->
         <div class='boardStyle'> 
             IP ADDRESS
             <p class='textStyle'> {{ipAddress}} </p>
         </div>
+
+      <!-- div to show the Country -->
         <div class='boardStyle'>
             Country
             <p class='textStyle'> 
@@ -11,18 +14,22 @@
                 <img class='w-fit m-auto w-8' :src=countryFlag alt='Country Flag'/>
             </p>
         </div>
+      <!-- div to show the City -->
         <div class='boardStyle'>
-            city
+            City
             <p class='textStyle'> {{city}}</p>
         </div>
+      <!-- div to show the ISP -->
         <div class='boardStyle'>
             isp
             <p class='textStyle'> {{isp}}</p>
         </div>
+      <!-- div to show the Currency -->
         <div class='boardStyle'>
             currency
             <p class='textStyle'> {{currency}}</p>
         </div>
+      <!-- div to show the timezone -->
         <div class='boardStyle'>
             timezone
             <p class='textStyle'> {{timezone}}</p>
