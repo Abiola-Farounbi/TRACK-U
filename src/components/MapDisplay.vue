@@ -35,19 +35,23 @@ export default {
     },
   },
   methods: {
-    displayMap(){
+      displayMap(){
+      // import the required JavaScript file for displaying the map
       let mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
+      //access token
       mapboxgl.accessToken =  process.env.VUE_APP_MAP_TOKEN
+      // the map object
       const map = new mapboxgl.Map({
-      container: 'map', // container ID
-      style: "mapbox://styles/mapbox/streets-v11",// style URL
-      center: [this.longitude, this.latitude], // starting position [lng, lat]
-      zoom: 5 // starting zoom    
+      container: 'mapContainer', // container ID
+      style: "mapbox://styles/mapbox/streets-v12",
+      center: [this.longitude, this.latitude],
+      zoom: 10
       });
+    //adding zoom and rotation controls
      map.addControl(new mapboxgl.NavigationControl());
 
      
-    //  Create a default Marker, colored black.
+    //  Create a default marker colored black.
     const marker = new mapboxgl.Marker({ color: 'black' })
     .setLngLat([this.longitude, this.latitude])
     marker.addTo(map);
