@@ -42,43 +42,49 @@
 export default {
   name: 'Dashboard',
   // Passing the values as props.
-  props: { 
+props: { 
+    //the IP address fed in
       ipAddress:{
           type:String,
           required:true,
           default:''
       },
+    //the ISP the user is using
      isp:{
           type:String,
           required:true,
           default:''
      },
+     //the country where the device/use is currently located
    country:{
        type:String,
        required:true,
        default:''
    },
+   //the image URL of the country flag
     countryFlag:{
          type:String,
          required:true,
           default:''
     },
+    //the city where the device/use is currently located
     city:{
          type:String,
          required:true,
           default:''   
     },
+    ////the currency of the country where the device/use is currently located
      currency:{
            type:String,
          required:true,
           default:''   
      },
+     //the timezone where the device/use is currently located
     timezone:{
         type:String,
         required:true,
           default:''  
     }
-
 }
 }
 </script>
