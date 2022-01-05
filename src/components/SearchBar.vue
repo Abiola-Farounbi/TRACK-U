@@ -22,7 +22,7 @@ export default {
     };
   },
   methods: {
-    // search function
+    //this function is used for getting the typed in IP address
     takeIP() {
       this.$emit("trackIp", this.searchInput);
     },
