@@ -54,7 +54,7 @@ export default {
     //  Create a default marker colored black.
     const marker = new mapboxgl.Marker({ color: 'black' })
     .setLngLat([this.longitude, this.latitude])
-    marker.addTo(map);
+    marker.addTo(mapContainer);
   },
     }
 }
