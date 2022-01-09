@@ -35,6 +35,7 @@ export default {
     },
   },
   methods: {
+  
       displayMap(){
       // import the required JavaScript file for displaying the map
       let mapboxgl = require("mapbox-gl/dist/mapbox-gl.js");
@@ -54,7 +55,7 @@ export default {
     //  Create a default marker colored black.
     const marker = new mapboxgl.Marker({ color: 'black' })
     .setLngLat([this.longitude, this.latitude])
-    marker.addTo(mapContainer);
+    marker.addTo(map);
   },
     }
 }
